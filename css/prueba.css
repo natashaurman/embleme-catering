@@ -1,0 +1,318 @@
+.tituloConocenos, .tituloServicios h1, .encabezadoContacto h1, .sumateTexto h1 {
+  color: #d39b00;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center; }
+
+.tituloServicios P, .encabezadoContacto p, .sumateTexto p {
+  color: #000000;
+  text-align: center;
+  font-weight: 400; }
+
+.atributo img, .atributob img, .imgContacto, .imgTrabaja {
+  -webkit-box-shadow: 10px 10px 21px -10px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 10px 10px 21px -10px rgba(0, 0, 0, 0.51);
+  box-shadow: 10px 10px 21px -10px rgba(0, 0, 0, 0.51); }
+
+/* General */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Work sans";
+  overflow-x: hidden; }
+
+section {
+  width: 100%;
+  height: auto;
+  min-height: 100vh; }
+
+.navCustom {
+  position: sticky;
+  font-weight: 700;
+  background-color: black; }
+  .navCustom a {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 0.2em; }
+  .navCustom a:hover {
+    transform: translateY(-4px);
+    transition: all 0.5s ease; }
+  .navCustom li {
+    margin-left: 10px;
+    margin-right: 10px; }
+  .navCustom li:hover {
+    border-bottom: #d39b00 2px solid; }
+  .navCustom .activo {
+    border-bottom: #d39b00 2px solid; }
+
+header {
+  background-color: black; }
+
+footer {
+  font-size: 12px;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #141414;
+  border-top: 1px solid white;
+  width: 100%; }
+  footer .logoFooter {
+    margin: 2vh; }
+    footer .logoFooter img {
+      height: 18vh; }
+  footer .datosFooter {
+    margin: 10vh; }
+  footer .rrss img {
+    width: 2vw;
+    margin: 0.1vw; }
+
+/* INDEX */
+.index {
+  background-color: black; }
+
+.carousel .carousel-item,
+.carousel .fondo__uno,
+.carousel .fondo__dos,
+.carousel .fondo__tres {
+  height: 90vh;
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll; }
+
+.carousel .fondo__uno {
+  background-image: url("../imagenes/sliderimg.png"); }
+
+.carousel .fondo__dos {
+  background-image: url("../imagenes/sliderimg2.png"); }
+
+.carousel .fondo__tres {
+  background-image: url("../imagenes/sliderimg4.png"); }
+
+.carousel .contenedorCaption {
+  transform: translateY(-50%);
+  top: 50%;
+  bottom: initial; }
+
+.carousel .carouselTitulo {
+  color: #d39b00;
+  font-size: 10vh;
+  font-weight: 600; }
+
+.carousel .carouselSubtitulo {
+  color: #ffffff;
+  font-size: 5vh;
+  font-weight: 300;
+  margin-bottom: 2vh; }
+
+.carousel .botonIndex {
+  background-color: #d39b00; }
+  .carousel .botonIndex:hover {
+    background-color: black;
+    border: 1px solid #d39b00;
+    transition: all 0.5s ease; }
+  .carousel .botonIndex:hover {
+    box-shadow: 0px 15px 20px rgba(129, 129, 129, 0.4);
+    transform: translateY(-5px); }
+
+.indexQuote {
+  color: white;
+  font-size: 1.5rem; }
+
+/* CONOCENOS */
+.atributo {
+  border-bottom: 1px solid #d39b00;
+  border-left: 1px solid #d39b00;
+  padding: 4vh; }
+
+.atributob {
+  border-bottom: 1px solid #d39b00;
+  border-right: 1px solid #d39b00;
+  padding: 4vh; }
+
+.textoAtributo h2 {
+  color: #d39b00;
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-size: 4vh;
+  margin: 4vh 0; }
+
+.textoAtributo p {
+  font-size: 1.2rem; }
+
+.formConocenos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #AC7E00; }
+
+.submitConocenos {
+  background-color: black; }
+  .submitConocenos:hover {
+    background-color: white;
+    border: 1px solid black;
+    transition: all 0.5s ease; }
+  .submitConocenos:hover {
+    box-shadow: 0px 15px 20p;
+    color: #9c5e00;
+    transform: translateY(-5px); }
+
+/* Nuestros servicios */
+.servicio {
+  border: #d39b00 1px solid;
+  display: inline-block;
+  background-color: white;
+  box-shadow: 0px 2px 2px rgba(129, 129, 129, 0.2);
+  /*         &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+    } */ }
+  .servicio .nombreServicio {
+    color: #d39b00;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 3vh;
+    margin-bottom: 3vh; }
+  .servicio img {
+    width: 95%;
+    margin: 2.5%;
+    display: inline-block;
+    border-radius: calc(.25rem - 1px); }
+
+/* Contacto y presupuesto */
+.encabezadoContacto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .encabezadoContacto p {
+    min-width: 400px;
+    margin-left: 2rem;
+    display: inline-block;
+    text-align: center; }
+
+.formItem {
+  margin: 15px 0px; }
+
+.labelForm {
+  color: #4b4b4b;
+  font-size: 14px; }
+
+.botonForm {
+  background-color: #d39b00;
+  border: none; }
+  .botonForm:hover {
+    background-color: black;
+    border: 1px solid #d39b00;
+    transition: all 0.5s ease; }
+
+.radio {
+  font: size 10px; }
+
+/* TrabajaConNosotros */
+.sumate {
+  border-bottom: 1px #9c5e00 solid; }
+
+.sumateTexto p {
+  text-align: center; }
+
+.bajadaFormRrhh {
+  margin-bottom: 20px;
+  color: #d39b00;
+  display: inline-block;
+  width: 20%; }
+
+.imgTrabaja {
+  margin-bottom: 9.8vh;
+  margin-top: 4vh;
+  display: inline-block; }
+  .imgTrabaja .quote {
+    position: absolute;
+    background-color: #141414;
+    border: 1px solid #d39b00;
+    color: white;
+    padding: 2vh;
+    bottom: 25%;
+    font-size: medium;
+    width: 40%; }
+    .imgTrabaja .quote .quoteBody {
+      font-weight: 600; }
+    .imgTrabaja .quote .firmaQuote {
+      font-size: small; }
+
+.formularioTrabaja {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 60px;
+  border: 1px solid #d39b00;
+  padding: 20px;
+  display: inline-block;
+  width: 45%; }
+
+.formItemrrhh label {
+  margin: 15px;
+  font-size: 16px;
+  font-weight: 300; }
+
+.formItemrrhh input {
+  margin-left: 10px;
+  display: inline-block; }
+
+.comentario {
+  width: 100%;
+  display: block; }
+
+.oportunidades {
+  color: #d39b00; }
+
+.containerCards {
+  min-height: 55vh;
+  display: flex; }
+
+.cardSumate {
+  box-shadow: 0px 2px 2px rgba(129, 129, 129, 0.2);
+  max-height: 40vh; }
+  .cardSumate:hover {
+    transform: translateY(-2px); }
+  .cardSumate p {
+    padding: 5 0vw; }
+  .cardSumate a {
+    background-color: white;
+    border: #d39b00 1px solid;
+    color: #d39b00; }
+    .cardSumate a:hover {
+      background-color: white;
+      border: 1px solid white;
+      transition: all 0.5s ease; }
+    .cardSumate a:hover {
+      box-shadow: 0px 15px 20p;
+      color: #9c5e00;
+      border: black 1px solid; }
+
+/* <!-- Modal --> */
+@media only screen and (max-width: 720px) {
+  .imgContacto {
+    padding-top: 3rem; } }
+
+@media only screen and (max-width: 576px) {
+  .contenedorCaption {
+    transform: translateY(-60%);
+    top: 50%;
+    bottom: initial; }
+  .carouselTitulo {
+    color: #d39b00;
+    font-size: 7vh;
+    margin-bottom: 5vh; }
+  .carouselSubtitulo {
+    font-size: 3vh; }
+  .botonForm {
+    width: 300px; } }
+
+@media only screen and (max-width: 370px) {
+  .imgContacto {
+    padding-top: 3rem; } }
