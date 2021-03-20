@@ -57,7 +57,7 @@
 
   <body>
 
-    <main class="container-fluid m-0 p-0">
+    <main class="container-fluid m-0 p-0 container-contacto">
       <div class="row justify-content-center">
 
         <!-- TITULO + BAJADA -->
@@ -81,19 +81,19 @@
               <form class="ml-4">
 
                 <div class="mb-3">
-                  <label for="inputEmail4" class="form-label">Nombre y apellido</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Gabriel Medina">
+                  <label for="inputEmail4" class="form-label label-form">Nombre y apellido</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Gabriel Medina" name="nombre">
                 </div>
                 <div class="mb-3">
-                  <label for="inputEmail4" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@mail.com">
+                  <label for="inputEmail4" class="form-label label-form">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@mail.com" name="mail">
                 </div>
                 <div class="mb-3">
-                  <label for="inputAddress" class="form-label">Teléfono</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="11 1234 5678">
+                  <label for="inputAddress" class="form-label label-form">Teléfono</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="11 1234 5678" name="telefono">
                 </div>
                 <div class="mb-3">
-                  <label for="inputState" class="form-label">Tipo de evento</label>
+                  <label for="inputState" class="form-label label-form">Tipo de evento</label>
                   <select id="inputState" class="form-select">
                     <option selected>Elegir</option>
                     <option>Corporativo</option>
@@ -103,23 +103,24 @@
                   </select>
                 </div>
                 <div class="mb-3">
-                  <label for="inputAddress2" class="form-label">¿Querés agregar algún comentario?</label>
+                  <label for="inputAddress2" class="form-label label-form">¿Querés agregar algún comentario?</label>
                   <input type="comment" class="form-control" id="inputAddress2" placeholder=>
                 </div>
                 <div class="mb-3">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
+                    <input class="form-check-input label-form" type="checkbox" id="gridCheck">
+                    <label class="form-check-label label-form" for="gridCheck">
                       Quiero recibir novedades por mail.
                     </label>
                   </div>
                 </div>
                 <div class="col-12 mb-4 p-0">
-                  <button type="button" class="btn btn-primary botonForm col-md-3 col-sm-12" data-toggle="modal"
-                    data-target="#exampleModal">
-                    Enviar
-                  </button>
-                </div>
+                  <button type="button"
+                  class="btn btn-primary botonForm col-lg-3 col-md-12 col-sm-12 col-xs-12"
+                  data-toggle="modal" data-target="#exampleModal">
+                  Enviar
+              </button>
+  </div>
 
               </form>
             </div>
@@ -161,6 +162,14 @@
           </section>
 
         </div>
+
+                <!-- TITULO + BAJADA -->
+
+                <div class="encabezadoContacto col-md-6 col-sm-12 justify-self-center">
+                  <h1 class="mt-4">mapa</h1>
+                </div>
+        
+                <!-- FIN TITULO + BAJADA -->
 
     </main>
 
