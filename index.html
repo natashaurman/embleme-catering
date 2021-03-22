@@ -14,7 +14,7 @@
   <title>Home</title>
 </head>
 
-<body class="index">
+<body>
 
   <!-- HEADER -->
 
@@ -22,7 +22,7 @@
 
     <!-- NAV -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg- navCustom">
+    <nav class="navbar navbar-expand-lg navbar-dark bg- nav-custom">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img src="imagenes\inversion_reducida.jpg" alt="logo" height="50px"
             width="50px"></a>
@@ -59,19 +59,20 @@
 
   <!-- SLIDER-->
 
-  <div id="carouselExampleControls" class="carousel slide carousel-index" data-ride="carousel">
-    <div class="carousel-caption d-md-block mb-5 carousel-contenedor-caption">
-      <h1 class="carousel-titulo">Embleme, un catering <br> de excelencia.</h1>
-      <p class="carousel-subtitulo mb-4">Sabores únicos que crean momentos inolvidables.</p>
-      <a href="servicios.html"><button type="button" class="btn btn-secondary btn-lg botonIndex">Nuestros
-          servicios</button>
-    </div></a>
+  <div id="carouselExampleControls" class="carousel slide carousel-index container-fluid m-0" data-ride="carousel">
+    <div class="carousel-caption d-md-block mb-5 carousel-contenedor-caption row">
+      <h1 class="carousel-titulo col-12">Emblème, un catering <br> de excelencia.</h1>
+      <p class="carousel-subtitulo mb-4 col-12">Sabores únicos que crean momentos inolvidables.</p>
+      <div class="col-12">
+        <button type="button" class="btn btn-secondary btn-lg boton-index"><a href="servicios.html"> Nuestros
+            servicios</a></button></div>
+    </div>
     <div class="carousel-inner">
-      <div class="carousel-item active fondo-uno">
+      <div class="carousel-item active fondo-uno col-12">
       </div>
-      <div class="carousel-item fondo-dos">
+      <div class="carousel-item fondo-dos col-12">
       </div>
-      <div class="carousel-item fondo-tres">
+      <div class="carousel-item fondo-tres col-12">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -90,182 +91,177 @@
 
   <!-- título + bajada -->
 
-  <div class="servicios-index">
-  <div class="row justify-content-center">
-    <div class="servicios-titulo-index text-center col-md-6 col-sm-12 justify-self-center">
-      <h1> Qué ofrecemos</h1>
-      <p>Nos adaptamos a tu evento para brindarte un servicio personalizado <br> y de primera calidad.</p>
+  <div class="servicios-index mt-5">
+    <div class="row justify-content-center mx-0">
+      <div class="servicios-titulo-index text-center col-md-6 col-sm-12 justify-self-center">
+        <h1> Qué ofrecemos</h1>
+        <p>Nos adaptamos a tu evento para brindarte un servicio personalizado <br> y de primera calidad.</p>
+      </div>
     </div>
-  </div>
 
     <!-- cards -->
 
-  <div class="container-fluid">
-    <div class="row mx-5 mb-5 justify-content-center">
+    <div class="container-fluid">
+      <div class="row  mb-5 justify-content-center">
 
-      <div class="card text-white m-3 servicio-card-index" style="width: 300px;">
-        <img src="imagenes/servicio3index.jpg" class="card-img-top" alt="...">
-        <div class="card-img-overlay">
-          <h5 class="card-title">CORPORATIVO</h5>
-          <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in
-            HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
-          <a href="servicios.html" class="btn stretched-link col-12 btn-card-servicio">Ver detalles</a>
+        <div class="card text-white m-3 servicio-card-index">
+          <img src="imagenes/servicio3index.jpg" class="card-img-top" alt="imagen catering corporativo">
+          <div class="card-img-overlay">
+            <h5 class="card-title">CORPORATIVO</h5>
+            <p class="card-text">Acompañamos workshops, reuniones internas, team bulding y eventos institucionales para
+              startups PyMES y grandes compañías.</p>
+            <a href="servicios.html#servicio-corporativo" class="btn stretched-link col-12 btn-card-servicio">Ver
+              detalles</a>
+          </div>
         </div>
-      </div>
 
-      <div class="card text-white m-3 servicio-card-index" style="width: 300px;">
-        <img src="imagenes/servicio2index.jpg" class="card-img-top" alt="...">
-        <div class="card-img-overlay">
-          <h5 class="card-title">SOCIAL</h5>
-          <p class="card-text titulo-card-servicio-index">Alice is a freelance web designer and developer based in London. She is specialized in
-            HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
-          <a href="servicios.html" class="btn stretched-link col-12 btn-card-servicio" >Ver detalles</a>
+        <div class="card text-white m-3 servicio-card-index">
+          <img src="imagenes/servicio2index.jpg" class="card-img-top" alt="imagen catering social">
+          <div class="card-img-overlay">
+            <h5 class="card-title">SOCIAL</h5>
+            <p class="card-text titulo-card-servicio-index">Nos ocupamos de que cada invitado a tu casamiento, bautismo,
+              fiesta de 15 o cumpleaños disfrute desde el primer bocado. </p>
+            <a href="servicios.html#servicio-social" class="btn stretched-link col-12 btn-card-servicio">Ver
+              detalles</a>
+          </div>
         </div>
-      </div>
 
-      <div class="card text-white m-3 servicio-card-index" style="width: 300px;">
-        <img src="imagenes/servicio1index.jpg" class="card-img-top" alt="...">
-        <div class="card-img-overlay">
-          <h5 class="card-title">INFORMAL</h5>
-          <p class="card-text">Alice is a freelance web designer and developer based in London. She is specialized in
-            HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
-          <a href="servicios.html" class="btn stretched-link col-12 btn-card-servicio">Ver detalles</a>
+        <div class="card text-white m-3 servicio-card-index">
+          <img src="imagenes/servicio1index.jpg" class="card-img-top" alt="imagen catering informal">
+          <div class="card-img-overlay">
+            <h5 class="card-title">INFORMAL</h5>
+            <p class="card-text">Diseñamos menús ideales para que tu evento sea impecable, sin importar si es un evento
+              más pequeño, íntimo o descontracturado.</p>
+            <a href="servicios.html#ervicio-informal" class="btn stretched-link col-12 btn-card-servicio">Ver
+              detalles</a>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
-</div>
 
   <!-- FIN SECCIÓN SERVICIOS -->
 
   <!-- NUESTROS VALORES -->
-        
-      <div id="carouselExampleCaptions" class="carousel slide carousel-valores my-5" data-ride="carousel">
-    
-        <div class="carousel-caption d-md-block mb-5 carousel-valores-titulo">
-          <p class="mb-4">VALORES EMBLEME</p>
-          </div>
-    
-        <div class="carousel-inner">
-          <div class="carousel-item active carousel-valores-item">
-            <div class="carousel-caption d-none d-md-block">
-              <h4>Excelencia</h4>
-              <p>Some representative placeholder content for the first slide content for the first slide.</p>
-            </div>
-          </div>
-            <div class="carousel-item carousel-valores-item">
-            <div class="carousel-caption d-none d-md-block">
-              <h4>Servicio</h4>
-              <p>Some representative placeholder content for the first slide content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item carousel-valores-item">
-            <div class="carousel-caption d-none d-md-block">
-              <h4>Expertise</h4>
-              <p>Some representative placeholder content for the third slide content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item carousel-valores-item">
-            <div class="carousel-caption d-none d-md-block">
-              <h4>Pasión</h4>
-              <p>Some representative placeholder content for the third slide content for the first slide.</p>
-            </div>
-          </div>
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-valores my-5" data-ride="carousel">
+
+    <div class="carousel-caption d-md-block mb-5 carousel-valores-titulo">
+      <p class="mb-4">VALORES EMBLEME</p>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active carousel-valores-item">
+        <div class="carousel-caption  d-md-block">
+          <h4>Excelencia</h4>
+          <p>Cuidamos los detalles para lograr siempre un resultado impecable.</p>
         </div>
-
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-
       </div>
-      
+      <div class="carousel-item carousel-valores-item">
+        <div class="carousel-caption d-md-block">
+          <h4>Servicio</h4>
+          <p>Nuestros clientes y sus invitados están primero, y nos encanta que así sea.</p>
+        </div>
+      </div>
+      <div class="carousel-item carousel-valores-item">
+        <div class="carousel-caption  d-md-block">
+          <h4>Expertise</h4>
+          <p>Nos perfeccionamos, aprendemos y nos formamos para ser cada día mejores.</p>
+        </div>
+      </div>
+      <div class="carousel-item carousel-valores-item">
+        <div class="carousel-caption  d-md-block">
+          <h4>Pasión</h4>
+          <p>El amor por nuestro trabajo nos motiva a hacer lo que hacemos.</p>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  </div>
+
   <!-- FIN NUESTROS VALORES -->
-    
+
 
   <!-- QUOTE -->
 
   <div class="container-fluid">
-    <div class="row m-3 col-12 testimonio-index">
+    <div class="row   testimonio-index  align-items-center justify-content-center">
 
-      <div class="mr-2 my-5">
-        <img src="imagenes/index2.jpg"
-          alt="una mujer de espaldas a la cámara levanta una copa para brindar en un evento" width="700px">
+      <div class="my-5 col-md-5 col-sm-12">
+        <img src="imagenes/index2.jpg" class="img-fluid"
+          alt="una mujer de espaldas a la cámara levanta una copa para brindar en un evento">
       </div>
-      <div class="col-md-4 col-sm-12 ml-1 testimonio-quote-index">
+      <div class="col-md-5 col-sm-12 testimonio-quote-index">
         <p>"Elegir Embléme fue una de las mejores decisiones que tomamos al planificar el casamiento: fueron atentos y
           receptivos desde el primer momento y crearon una propuesta increíble junto con nosotros".</p>
-          <p class="firma-quote">- Marcos y Juan.</p>
-  
+        <p class="firma-quote">- Marcos y Juan.</p>
       </div>
-
     </div>
+
   </div>
 
-  <!-- FIN QUOTE -->  
 
-    <!-- FORM -->
 
-    <div class="container form-index col-md-12" style="height:auto">
-      <h2 class="text-white text-center pt-4">
-        ¡Hablemos!
-      </h2>
-      <p class="text-white text-center pt-1">Ahora que ya nos conocés, construyamos juntos tu propuesta. </p>
+  <!-- FIN QUOTE -->
 
-      <form class="form-inline">
-        <div class="form-group mb-4 mr-3">
-          <label for="inputPassword2" class="sr-only">Email</label>
-          <input type="email" class="form-control" id="inputPassword2" placeholder="Email">
-        </div>
 
-        <!-- Botón -->
-
-        <div>
-          <button type="button"
-          class="btn btn-primary botonForm col-lg-3 col-md-12 col-sm-12 col-xs-12"
-          data-toggle="modal" data-target="#exampleModal">
-          Enviar
-      </button>
-</div>
-
-        <!-- Fin botón -->
-
-      </form>
-    </div>
-
-    <!-- FIN FORM -->
 
 
   <!-- FOOTER -->
 
-  <footer class="row col-lg-12 col-md-12 m-0 container-fluid">
+  <footer class="row m-0 container-fluid">
 
-
-    <div class="logoFooter">
-      <img src="imagenes/inversion_logo.png" class="img-fluid" alt="logotipos">
+    <div class="logo-footer col-md-2">
+      <img src="imagenes/inversion_logo.png" alt="logo de la marca">
     </div>
 
-    <div class="column text-center datosFooter">
-      <p class="text-light pt-4"><strong>EMBLEME S.A.</strong></p>
-      <p class="row justify-content-center text-light m-0">Pasaje de los Ejemplos 3012</p>
-      <p class="row justify-content-center text-light m-0">+54 9 11-2761-2020</p>
-      <p class="row justify-content-center text-light">hola@emblemecatering.com</p>
+    <div class="column datos-footer col-md-3">
+      <p class="titulo-footer"><strong>EMBLEME S.A.</strong></p>
+      <p class="row text-light m-0">Pasaje de los Ejemplos 3012</p>
+      <p class="row text-light m-0">+54 9 11-2761-2020</p>
+      <p class="row text-light m-0"> hola@emblemecatering.com</p>
 
-      <div class="text-center text-light">
-        © 2021 Copyright:
+      <div class="text-light mt-3">
+        © 2021 diseño:
         <a class="text-light" href="https://www.behance.net/natashaurm9926/">Natasha Urman</a>
       </div>
-
     </div>
+
+    <div class="column text-left menu-footer col-md-2">
+      <p><strong> MENU </strong></p>
+      <ul>
+        <li><a href="/index.html">HOME</a></li>
+        <li><a href="/conocenos.html">CONOCENOS</a></li>
+        <li><a href="/servicios.html">SERVICIOS</a></li>
+        <li><a href="/contacto.html">CONTACTO Y PRESUPUESTOS</a></li>
+        <li><a href="/trabajaconnosotros.html">SUMATE A EMBLEME</a></li>
+      </ul>
+    </div>
+
+    <div class="redes col-md-2">
+      <div>
+        <p class="titulo-redes"><strong>Seguinos en nuestras redes:</strong> </p>
+      </div>
+      <img src="imagenes/facebook.png" alt="facebook" width="24" height="24">
+      <p>/emblemecatering</p>
+      <img src="imagenes/instagram.png" alt="instagram" width="24" height="24">
+      <p>@emblemecatering </p>
+    </div>
+
+
   </footer>
 
   <!-- FIN FOOTER -->
-
   <!-- SCRIPTS -->
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

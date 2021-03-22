@@ -21,9 +21,9 @@
 
         <!-- NAV -->
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg- navCustom">
+        <nav class="navbar navbar-expand-lg navbar-dark bg- nav-custom">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="imagenes\inversion_reducida.jpg" alt=""
+                <a class="navbar-brand" href="index.html"><img src="imagenes\inversion_reducida.jpg" alt="logo"
                         height="50px" width="50px"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,11 +34,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">HOME</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="conocenos.html">CONOCENOS</a>
+                        <li class="nav-item item ">
+                            <a class="nav-link" href="conocenos.html">CONOCENOS </a>
                         </li>
                         <li class="nav-item active activo">
-                            <a class="nav-link" href="servicios.html">SERVICIOS <span
+                            <a class="nav-link" href="servicios.html">SERVICIOS<span
                                     class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -51,10 +51,10 @@
                 </div>
             </div>
         </nav>
+
+        <!-- FIN NAV -->
+
     </header>
-
-    <!-- FIN NAV -->
-
 
     <main class="container-fluid container-nuestros-servicios">
 
@@ -62,7 +62,7 @@
 
         <div class="row justify-content-center">
 
-            <div class="tituloServicios mt-4 text-center col-md-6 col-sm-12 justify-self-center">
+            <div class="titulo-servicios mt-4 text-center col-md-6 col-sm-12 justify-self-center">
                 <h1> Nuestros servicios</h1>
                 <p>Tenemos opciones especialmente pensadas para cada tipo de evento, <br> y seleccionamos cada
                     ingrediente
@@ -76,203 +76,221 @@
 
         <!-- CARDS SERVICIOS -->
 
-        <div class="container-fluid m-0">
+        <!-- Servicio corporativo descripción -->
 
-            <!-- card 1 servicio -->
-
-            <div class="card text-white col-12 cards-servicio-contenedor">
-                <img src="imagenes/servicio-corporativo.jpg" class="card-img" alt="...">
-                <div class="container">
-                    <div class="row">
-                        <div class="card-img-overlay servicio-card col-12">
-                            <h2 class="card-title">Eventos corporativos</h2>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional
-                                content. This content is a little bit longer. This is a wider card with supporting text
-                                below as a natural lead-in to additional
-                                content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-
-                        </div>
-                    </div>
+        <div class="container-fluid servicio-evento fondo-corporativo" id="servicio-corporativo">
+            <div class="row servicio-evento-texto">
+                <div class="col-md-4 col-sm-12">
+                    <h2>Eventos corporativos</h2>
+                </div>
+                <div class="col-md-4 col-sm-11 col-xs-12">
+                    <p>Acompañamos workshops, reuniones internas, team bulding y eventos
+                        institucionales para startups PyMES y grandes compañías.</p>
                 </div>
             </div>
-            <!-- fin card 1 servicio -->
-
-            <!-- card 1 menu -->
-
-            <div class="container-fluid comida-servicios m-0">
-                <div class="row justify-content-center">
-                    <div class="col-3 mx-3 contenedor-texto-servicio">
-                        <h5>Entrada</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi soluta
-                            asperiores sed id sequi.</p>
-                    </div>
-                    <div class="col-3 mx-3 contenedor-texto-servicio">
-                        <h5>Plato principal</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi soluta
-                            asperiores sed id sequi.</p>
-                    </div>
-                    <div class="col-3 mx-3 contenedor-texto-servicio2">
-                        <h5>Mesa dulce</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi soluta
-                            asperiores sed id sequi.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- fin card 1 menu -->
-
-
-
-            <!-- card 2 servicio -->
-
-            <div class="card text-white col-12 cards-servicio-contenedor">
-                <img src="imagenes/servicio-social.jpg" class="card-img" alt="...">
-                <div class="container">
-                    <div class="row">
-                        <div class="card-img-overlay servicio-card col-12">
-                            <h2 class="card-title">Eventos sociales</h2>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional
-                                content. This content is a little bit longer. This is a wider card with supporting text
-                                below as a natural lead-in to additional
-                                content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- fin card 2 servicio -->
-
-
-            <!-- card 2 menu -->
-
-            <div class="container-fluid comida-servicios m-0">
-                <div class="row justify-content-center">
-                    <div class="col-3 mx-3 contenedor-texto-servicio">
-                        <h5>Entrada</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi soluta
-                            asperiores sed id sequi.</p>
-                    </div>
-                    <div class="col-3 mx-3 contenedor-texto-servicio">
-                        <h5>Plato principal</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi soluta
-                            asperiores sed id sequi.</p>
-                    </div>
-                    <div class="col-3 mx-3 contenedor-texto-servicio2">
-                        <h5>Mesa dulce</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi soluta
-                            asperiores sed id sequi.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- fin card 2 menu -->
-
-
-            <!-- card 3 servicio -->
-
-            <div class="card text-white col-12 cards-servicio-contenedor">
-                <img src="imagenes/servicio-informal2.jpg" class="card-img" alt="...">
-                <div class="container">
-                    <div class="row">
-                        <div class="card-img-overlay servicio-card col-12">
-                            <h2 class="card-title">Eventos informales</h2>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional
-                                content. This content is a little bit longer. This is a wider card with supporting text
-                                below as a natural lead-in to additional
-                                content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- fin card 3 servicio -->
-
-            <!-- card 3 menu -->
-
-            <div class="container-fluid comida-servicios m-0">
-                <div class="row justify-content-center">
-                    <div class="col-3 mx-3 contenedor-texto-servicio">
-                        <h5>Entrada</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi soluta
-                            asperiores sed id sequi.</p>
-                    </div>
-                    <div class="col-3 mx-3 contenedor-texto-servicio">
-                        <h5>Plato principal</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi soluta
-                            asperiores sed id sequi.</p>
-                    </div>
-                    <div class="col-3 mx-3 contenedor-texto-servicio2">
-                        <h5>Mesa dulce</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi soluta
-                            asperiores sed id sequi.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- fin card 3 menu -->
-
-
-
         </div>
 
+        <!-- Servicio corporativo menu -->
 
-
-
-
-    </main>
-
-    <!-- FIN CARDS SERVICIOS -->
-
-
-
-    <!-- FOOTER -->
-
-    <footer class="row col-lg-12 col-md-12 m-0 container-fluid">
-
-
-        <div class="logoFooter">
-            <img src="imagenes/inversion_logo.png" class="img-fluid" alt="logotipos">
+        <div class="container-fluid">
+            <div class="row servicio-comida">
+                <div class="col-md-3 col-sm-12 servicio-comida-texto">
+                    <h5>Desayunos y meriendas</h5>
+                    <ul>
+                        <li>Variedad de frutas de estación</li>
+                        <li>Facturas y madialunas</li>
+                        <li>Tostados de queso brie, roquefort y rúcula</li>
+                        <li>Yogurt con granola </li>
+                        <li>Budines de naranja, chocolate y banana con nuez</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12 servicio-comida-texto">
+                    <h5>Almuerzos</h5>
+                    <ul>
+                        <li>Ensaladas caesar y capresse</li>
+                        <li>Empanadas y tartas</li>
+                        <li>Panqueques salados </li>
+                        <li>Focaccia </li>
+                        <li>Rosotto con pollo </li>
+                        <li>Chop suey de vegetales </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12 servicio-comida-texto">
+                    <h5>Tapeos y bandejeados</h5>
+                    <ul>
+                        <li>Aceitunas a la escolana</li>
+                        <li>Cazuelitas con papines a la Huancaina</li>
+                        <li>Bombitas de papa con panko y aceite de trufa</li>
+                        <li>Mini lomitos con salsa verde </li>
+                        <li>Brochette de cerdo y vegetales con salsa agridulce </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <div class="column text-center datosFooter">
-            <p class="text-light pt-4"><strong>EMBLEME S.A.</strong></p>
-            <p class="row justify-content-center text-light m-0">Pasaje de los Ejemplos 3012</p>
-            <p class="row justify-content-center text-light m-0">+54 9 11-2761-2020</p>
-            <p class="row justify-content-center text-light">hola@emblemecatering.com</p>
+        <!-- Fin servicio corporativo -->
 
-            <div class="text-center text-light">
-                © 2021 Copyright:
-                <a class="text-light" href="https://www.behance.net/natashaurm9926/">Natasha Urman</a>
+        <!-- Servicios sociales descripción -->
+
+        <div class="container-fluid servicio-evento fondo-social" id="servicio-social">
+            <div class="row servicio-evento-texto">
+                <div class="col-md-4 col-sm-12">
+                    <h2>Eventos sociales</h2>
+                </div>
+                <div class="col-md-6 col-sm-11">
+                    <p>Nos ocupamos de que cada invitado a tu casamiento, bautismo, fiesta de
+                        15 o cumpleaños disfrute desde el primer bocado.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicios sociales menu -->
+
+        <div class="container-fluid">
+            <div class="row servicio-comida">
+                <div class="col-md-3 col-sm-12 servicio-comida-texto">
+                    <h5>Entrada</h5>
+                    <ul>
+                        <li>Sea food island</li>
+                        <li>Picada artesanal</li>
+                        <li>Bandejas de bruschettas</li>
+                        <li>Shots de ceviche, gazpacho y guacamole</li>
+                        <li>Pernil de tofu</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12 servicio-comida-texto">
+                    <h5>Plato principal</h5>
+                    <ul>
+                        <li>Cazuela de Pollo al champignon</li>
+                        <li>Opción vegetariana: malfatti de calabaza y mozzarella con salsa de albahaca</li>
+                        <li>Opción gluten free: quiche de puerro y jamón con masa de batatas</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12 servicio-comida-texto">
+                    <h5>Mesa dulce</h5>
+                    <ul>
+                        <li>Almendrado con salsa de chocolate</li>
+                        <li>Bombón suizo</li>
+                        <li>Fondue de chocolate</li>
+                        <li>Red velvet cupcakes</li>
+                        <li>Oreo cheescake</li>
+                        <li>Brownies de chocolate blanco</li>
+                        <li>Peras al borgoña</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fin servicio corporativo -->
+
+        <!-- Servicios informales descripción -->
+
+        <div class="container-fluid servicio-evento fondo-informal" id="servicio-informal">
+            <div class="row servicio-evento-texto">
+                <div class="col-md-4 col-sm-12">
+                    <h2>Eventos informales</h2>
+                </div>
+                <div class="col-md-6 col-sm-11">
+                    <p>Diseñamos menús ideales para que tu evento sea impecable, sin importar
+                        si es un evento más pequeño, íntimo o descontracturado.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicios informales menu -->
+
+        <div class="container-fluid">
+            <div class="row servicio-comida">
+                <div class="col-md-3 col-sm-12 servicio-comida-texto">
+                    <h5>Finger food</h5>
+                    <ul>
+                        <li>Pinchos de pollo tostados</li>
+                        <li>Spicy calamaretis tiernos</li>
+                        <li>Mini flat sandwiches</li>
+                        <li>Diversidad de dips</li>
+                        <li>Mini french fries</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12 servicio-comida-texto">
+                    <h5>Principales</h5>
+                    <ul>
+                        <li>Asado</li>
+                        <li>Hamburguesas</li>
+                        <li>Pizza party</li>
+                        <li>Wraps vegetarianos</li>
+                        <li>Pasta party</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12 servicio-comida-texto">
+                    <h5>Mesa dulce</h5>
+                    <ul>
+                        <li>Panqueques</li>
+                        <li>Chocotorta premium</li>
+                        <li>Oreo Cheesecake</li>
+                        <li>Cesta de frutas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fin servicio corporativo -->
+
+
+
+
+        <!-- FOOTER -->
+
+        <footer class="row m-0 container-fluid">
+
+            <div class="logo-footer col-md-2">
+                <img src="imagenes/inversion_logo.png" alt="logotipos">
             </div>
 
-        </div>
-    </footer>
+            <div class="column datos-footer col-md-3">
+                <p class="titulo-footer"><strong>EMBLEME S.A.</strong></p>
+                <p class="row text-light m-0">Pasaje de los Ejemplos 3012</p>
+                <p class="row text-light m-0">+54 9 11-2761-2020</p>
+                <p class="row text-light m-0"> hola@emblemecatering.com</p>
 
-    <!-- FIN FOOTER -->
+                <div class="text-light mt-3">
+                    © 2021 diseño:
+                    <a class="text-light" href="https://www.behance.net/natashaurm9926/">Natasha Urman</a>
+                </div>
+            </div>
 
-    <!-- SCRIPTS -->
+            <div class="column text-left menu-footer col-md-2">
+                <p><strong> MENU </strong></p>
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/conocenos.html">CONOCENOS</a></li>
+                    <li><a href="/servicios.html">SERVICIOS</a></li>
+                    <li><a href="/contacto.html">CONTACTO Y PRESUPUESTOS</a></li>
+                    <li><a href="/trabajaconnosotros.html">SUMATE A EMBLEME</a></li>
+                </ul>
+            </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
-    </script>
+            <div class="redes col-md-2">
+                <div>
+                    <p class="titulo-redes"><strong>Seguinos en nuestras redes:</strong> </p>
+                </div>
+                <img src="imagenes/facebook.png" alt="facebook" width="24" height="24">
+                <p>/emblemecatering</p>
+                <img src="imagenes/instagram.png" alt="instagram" width="24" height="24">
+                <p>@emblemecatering </p>
+            </div>
+
+
+        </footer>
+
+        <!-- FIN FOOTER -->
+        <!-- SCRIPTS -->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

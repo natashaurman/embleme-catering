@@ -1,16 +1,16 @@
 @charset "UTF-8";
-.servicios-index .servicios-titulo-index h1, .tituloConocenos, .tituloServicios h1, .encabezadoContacto h1, .sumateTexto h1 {
+.servicios-index .servicios-titulo-index h1, .titulo-conocenos, .container-nuestros-servicios .titulo-servicios h1, .container-contacto .encabezado-contacto h1, .sumate .sumate-texto h1 {
   color: #d39b00;
   font-size: 2.2rem;
   font-weight: 700;
   text-align: center; }
 
-.servicios-index .servicios-titulo-index P, .tituloServicios P, .encabezadoContacto p, .sumateTexto p {
+.servicios-index .servicios-titulo-index P, .container-nuestros-servicios .titulo-servicios P, .container-contacto .encabezado-contacto P, .sumate .sumate-texto p {
   color: #000000;
   text-align: center;
   font-weight: 400; }
 
-.atributo img, .atributob img, .imgContacto, .imgTrabaja {
+.atributo img, .atributob img, .container-contacto .formulario-contacto .imgContacto, .img-sumate {
   -webkit-box-shadow: 10px 10px 21px -10px rgba(0, 0, 0, 0.51);
   -moz-box-shadow: 10px 10px 21px -10px rgba(0, 0, 0, 0.51);
   box-shadow: 10px 10px 21px -10px rgba(0, 0, 0, 0.51); }
@@ -23,30 +23,36 @@
 
 body {
   font-family: "Work sans";
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: black; }
 
 section {
   width: 100%;
-  height: auto;
-  min-height: 100vh; }
+  height: auto; }
 
-.navCustom {
+.btn:active {
+  border-color: none; }
+
+.btn-secondary:focus {
+  border-color: none; }
+
+.nav-custom {
   position: sticky;
   font-weight: 700;
   background-color: black; }
-  .navCustom a {
+  .nav-custom a {
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 0.2em; }
-  .navCustom a:hover {
+  .nav-custom a:hover {
     transform: translateY(-4px);
     transition: all 0.5s ease; }
-  .navCustom li {
+  .nav-custom li {
     margin-left: 10px;
     margin-right: 10px; }
-  .navCustom li:hover {
+  .nav-custom li:hover {
     border-bottom: #d39b00 2px solid; }
-  .navCustom .activo {
+  .nav-custom .activo {
     border-bottom: #d39b00 2px solid; }
 
 header {
@@ -56,30 +62,50 @@ footer {
   font-size: 12px;
   display: flex;
   flex-direction: row nowrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
   background-color: #141414;
   border-top: 1px solid white;
-  width: 100%; }
-  footer .logoFooter {
-    margin: 2vh; }
-    footer .logoFooter img {
-      height: 18vh; }
-  footer .datosFooter {
-    margin: 10vh; }
-  footer .rrss img {
-    width: 2vw;
-    margin: 0.1vw; }
+  padding-top: 4vh; }
+  footer .logo-footer {
+    margin-bottom: 2vh;
+    margin-left: 4vh; }
+  footer .datos-footer {
+    text-align: left;
+    margin-bottom: 4vh;
+    margin-left: 4vh; }
+    footer .datos-footer .titulo-footer {
+      color: #d39b00; }
+  footer .redes {
+    margin-bottom: 4vh;
+    margin-left: 4vh; }
+    footer .redes .titulo-redes {
+      color: #d39b00; }
+    footer .redes img {
+      display: inline; }
+    footer .redes p {
+      color: white;
+      display: block; }
+  footer .menu-footer {
+    margin-bottom: 4vh;
+    margin-left: 4vh; }
+    footer .menu-footer p {
+      color: #d39b00; }
+    footer .menu-footer ul {
+      list-style-type: none;
+      color: white; }
+    footer .menu-footer a {
+      color: white; }
+
+.modal-title {
+  color: #AC7E00; }
 
 /* INICIO SECCIÓN INDEX */
-.index {
-  background-color: black; }
-
 /* carousel principal */
-.carousel .carousel-item,
-.carousel .fondo-uno,
-.carousel .fondo-dos,
-.carousel .fondo-tres {
+.carousel-index .carousel-item,
+.carousel-index .fondo-uno,
+.carousel-index .fondo-dos,
+.carousel-index .fondo-tres {
   height: 90vh;
   min-height: 90vh;
   background-repeat: no-repeat;
@@ -87,65 +113,74 @@ footer {
   background-size: cover;
   background-attachment: scroll; }
 
-.carousel .fondo-uno {
+.carousel-index .fondo-uno {
   background-image: url("../imagenes/sliderimg.png"); }
 
-.carousel .fondo-dos {
+.carousel-index .fondo-dos {
   background-image: url("../imagenes/sliderimg2.png"); }
 
-.carousel .fondo-tres {
+.carousel-index .fondo-tres {
   background-image: url("../imagenes/sliderimg4.png"); }
 
-.carousel .carousel-contenedor-caption {
+.carousel-index .carousel-contenedor-caption {
   transform: translateY(-50%);
   top: 50%;
   bottom: initial; }
-  .carousel .carousel-contenedor-caption h1 {
+  .carousel-index .carousel-contenedor-caption h1 {
     color: #d39b00;
-    font-size: 10vh;
+    font-size: 5vw;
     font-weight: 600; }
-  .carousel .carousel-contenedor-caption p {
-    color: #ffffff;
-    font-size: 5vh;
-    font-weight: 300;
-    margin-bottom: 2vh; }
+  .carousel-index .carousel-contenedor-caption p {
+    color: white;
+    font-size: 3vw;
+    font-weight: 300; }
 
-.carousel .botonIndex {
+.carousel-index .boton-index {
   background-color: #d39b00; }
-  .carousel .botonIndex:hover {
+  .carousel-index .boton-index:hover {
     background-color: black;
     border: 1px solid #d39b00;
     transition: all 0.5s ease; }
-  .carousel .botonIndex:hover {
+  .carousel-index .boton-index:hover {
     box-shadow: 0px 15px 20px rgba(129, 129, 129, 0.4);
     transform: translateY(-5px); }
+  .carousel-index .boton-index a {
+    color: white;
+    text-decoration: none; }
 
 /* qué ofrecemos */
 .servicios-index {
   background-image: url("../imagenes/servicios-index.jpg"); }
   .servicios-index .servicios-titulo-index {
-    margin-top: 10vh; }
+    margin-bottom: 8vh;
+    margin-top: 8vh; }
     .servicios-index .servicios-titulo-index h1 {
       margin-bottom: 5vh; }
     .servicios-index .servicios-titulo-index P {
       color: white;
       margin-bottom: 8vh; }
-  .servicios-index .servicio-card-index h5 {
-    font-size: 1.5rem;
-    color: white; }
-  .servicios-index .servicio-card-index .btn-card-servicio {
-    background-color: #d39b00;
-    border-color: #d39b00;
-    color: white; }
-    .servicios-index .servicio-card-index .btn-card-servicio:hover {
-      background-color: black;
-      border: 1px solid #d39b00;
-      transition: all 0.5s ease; }
-    .servicios-index .servicio-card-index .btn-card-servicio:hover {
-      box-shadow: 0px 15px 20px rgba(129, 129, 129, 0.4);
-      transform: translateY(-5px); }
-    .servicios-index .servicio-card-index .btn-card-servicio:active {
-      border-color: #d39b00; }
+  .servicios-index .servicio-card-index {
+    max-width: 300px; }
+    .servicios-index .servicio-card-index h5 {
+      font-size: 4vw;
+      color: white;
+      font-size: 30px; }
+    .servicios-index .servicio-card-index p {
+      font-size: 3vw;
+      font-size: 17px; }
+    .servicios-index .servicio-card-index .btn-card-servicio {
+      background-color: #d39b00;
+      border-color: #d39b00;
+      color: white; }
+      .servicios-index .servicio-card-index .btn-card-servicio:hover {
+        background-color: black;
+        border: 1px solid #d39b00;
+        transition: all 0.5s ease; }
+      .servicios-index .servicio-card-index .btn-card-servicio:hover {
+        box-shadow: 0px 15px 20px rgba(129, 129, 129, 0.4);
+        transform: translateY(-5px); }
+      .servicios-index .servicio-card-index .btn-card-servicio:active {
+        border-color: #d39b00; }
 
 /* Carousel 2 (nuestro valores) */
 .carousel-valores {
@@ -155,7 +190,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover; }
   .carousel-valores .carousel-valores-titulo {
-    font-size: 1rem;
+    font-size: 1.5vw;
     right: 80%;
     top: 10%;
     text-align: left;
@@ -163,41 +198,45 @@ footer {
     min-width: fit-content;
     color: #bebcbc; }
   .carousel-valores .carousel-valores-item {
-    bottom: 35%; }
+    bottom: 35%;
+    height: 90vh;
+    min-height: 90vh; }
     .carousel-valores .carousel-valores-item div {
+      width: 40%;
       text-align: left; }
       .carousel-valores .carousel-valores-item div h4 {
-        font-size: 2rem;
+        font-size: 2vw;
         font-weight: 700;
         color: #d39b00;
-        margin-bottom: 1rem; }
+        margin-bottom: 1rem;
+        z-index: 9999; }
       .carousel-valores .carousel-valores-item div p {
-        font-size: 1.3rem;
+        font-size: 2vw;
         font-weight: 300; }
 
 /* testimonio */
 .testimonio-index {
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 1.3rem;
   font-style: italic;
   font-weight: 300;
   background-image: url("../imagenes/opc5.jpg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-bottom: 5rem; }
   .testimonio-index img {
     border: white solid 1px;
-    display: inline-block; }
+    display: inline;
+    margin: 1vw;
+    margin-top: 0vw; }
   .testimonio-index .testimonio-quote-index {
-    display: inline-block;
     border-right: white 1px solid;
     background-color: black;
-    padding: 10vh;
-    height: fit-content; }
+    height: fit-content;
+    margin: 1vw; }
   .testimonio-index .firma-quote {
     font-size: 1rem;
-    font-style: normal; }
+    font-style: normal;
+    margin: 1vw; }
 
 /* form */
 .form-index {
@@ -230,28 +269,30 @@ footer {
   border-right: 1px solid #d39b00;
   padding: 4vh; }
 
-.textoAtributo h2 {
+.texto-atributo h2 {
   color: #d39b00;
   font-weight: 400;
   letter-spacing: 5px;
   font-size: 4vh;
   margin: 4vh 0; }
 
-.textoAtributo p {
+.texto-atributo p {
   font-size: 1.2rem; }
 
-.formConocenos {
+.formulario-conocenos {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #AC7E00; }
-  .formConocenos button {
+  background-color: rgba(211, 155, 0, 0.3); }
+  .formulario-conocenos .label-form {
+    color: white; }
+  .formulario-conocenos button {
     background-color: black; }
-    .formConocenos button:hover {
+    .formulario-conocenos button:hover {
       background-color: white;
       border: 1px solid black;
       transition: all 0.5s ease; }
-    .formConocenos button:hover {
+    .formulario-conocenos button:hover {
       box-shadow: 0px 15px 20p;
       color: #AC7E00;
       transform: translateY(-5px); }
@@ -259,211 +300,265 @@ footer {
 /* Nuestros servicios */
 .container-nuestros-servicios {
   background-image: url("../imagenes/bg-servicios.jpg"); }
-
-.tituloServicios h1 {
-  margin-bottom: 5vh; }
-
-.tituloServicios P {
-  color: white; }
-
-.cards-servicio-contenedor {
-  margin: 30px 0px 0px 0px;
-  padding: 0px; }
-
-.servicio-card {
-  display: flex;
-  flex-flow: row nowrap;
-  width: 100%;
-  align-items: center; }
-  .servicio-card h2 {
+  .container-nuestros-servicios .titulo-servicios {
+    margin-bottom: 10vh; }
+    .container-nuestros-servicios .titulo-servicios h1 {
+      margin-bottom: 5vh; }
+    .container-nuestros-servicios .titulo-servicios P {
+      color: white; }
+  .container-nuestros-servicios .fondo-corporativo {
+    background-image: url("../imagenes/servicio-corporativo.jpg"); }
+  .container-nuestros-servicios .fondo-social {
+    background-image: url("../imagenes/servicio-social.jpg"); }
+  .container-nuestros-servicios .fondo-informal {
+    background-image: url("../imagenes/servicio-informal.jpg"); }
+  .container-nuestros-servicios .servicio-evento,
+  .container-nuestros-servicios .fondo-corporativo,
+  .container-nuestros-servicios .fondo-social,
+  .container-nuestros-servicios .fondo-informal {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 394px;
+    border-radius: 8px 8px 0px 0px;
+    border: 1px white solid;
+    border-bottom: none;
+    align-content: center; }
+  .container-nuestros-servicios .servicio-evento-texto {
     color: white;
-    text-align: left;
-    margin: 30px;
-    font-size: 4rem;
-    font-weight: 700;
-    display: inline-block; }
-  .servicio-card p {
-    display: inline-block;
-    font-size: 1.3rem;
-    text-align: left;
+    justify-content: space-around;
+    align-items: center; }
+    .container-nuestros-servicios .servicio-evento-texto h2 {
+      font-size: 3.5vw;
+      font-weight: 700;
+      margin-left: 3vw;
+      margin-bottom: 1.5vh; }
+    .container-nuestros-servicios .servicio-evento-texto p {
+      font-size: 1.5vw;
+      border-left: white 1px solid;
+      padding-left: 2vw; }
+  .container-nuestros-servicios .servicio-comida {
+    background-color: #141414;
     color: white;
-    border-left: solid 1px white;
-    padding: 2rem; }
-  .servicio-card > div {
-    width: 50%;
-    display: inline-block; }
-  .servicio-card .boton-card-servicios {
-    display: inline-block;
-    bottom: 20%; }
-
-.servicio-menu-item h4 {
-  color: #d39b00;
-  font-size: 18px; }
-
-.servicio-menu-item p {
-  font-size: 12px;
-  color: black; }
-
-.comida-servicios {
-  background-color: #141414;
-  color: white;
-  padding: 10vh; }
-  .comida-servicios .contenedor-texto-servicio {
-    border-right: 1px solid white; }
-    .comida-servicios .contenedor-texto-servicio h5 {
-      color: #d39b00; }
-
-.contenedor-texto-servicio2 h5 {
-  color: #d39b00; }
-
-.dropdown-servicios {
-  display: inline-block; }
+    display: flex;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    justify-content: space-around;
+    border: #d39b00 1px solid;
+    border-top: none;
+    margin-bottom: 15vh; }
+    .container-nuestros-servicios .servicio-comida .servicio-comida-texto {
+      border-bottom: white 1px solid; }
+      .container-nuestros-servicios .servicio-comida .servicio-comida-texto h5 {
+        color: #d39b00; }
+      .container-nuestros-servicios .servicio-comida .servicio-comida-texto ul {
+        margin-bottom: 5vh; }
 
 /* Contacto y presupuesto */
 .container-contacto {
   background-image: url("../imagenes/servicios-index.jpg"); }
-
-.encabezadoContacto {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .encabezadoContacto p {
-    min-width: 400px;
-    margin-left: 2rem;
-    display: inline-block;
-    text-align: center;
-    color: white; }
-
-.formItem {
-  margin: 15px 0px;
-  color: white; }
-
-.label-form {
-  color: white;
-  font-size: 14px; }
-
-.botonForm {
-  background-color: #d39b00;
-  border: none; }
-  .botonForm:hover {
-    background-color: black;
-    border: 1px solid #d39b00;
-    transition: all 0.5s ease; }
-
-.radio {
-  font: size 10px; }
+  .container-contacto .encabezado-contacto {
+    margin-bottom: 8vh;
+    margin-top: 8vh; }
+    .container-contacto .encabezado-contacto h1 {
+      margin-bottom: 5vh; }
+    .container-contacto .encabezado-contacto P {
+      color: white; }
+    .container-contacto .encabezado-contacto a {
+      color: #d39b00; }
+  .container-contacto .formulario-contacto .label-form {
+    color: white;
+    font-size: 14px;
+    font-weight: 400; }
+  .container-contacto .formulario-contacto .boton-form {
+    background-color: #d39b00;
+    border: none; }
+    .container-contacto .formulario-contacto .boton-form:hover {
+      background-color: black;
+      border: 1px solid #d39b00;
+      transition: all 0.5s ease; }
+  .container-contacto .formulario-contacto .radio {
+    font: size 10px; }
+  .container-contacto .formulario-contacto .comentario {
+    height: 30vh; }
 
 /* TrabajaConNosotros */
-.container-sumate {
-  background-image: url("../imagenes/bg-servicios.jpg"); }
-  .container-sumate .container-2 {
-    background-color: white; }
-
 .sumate {
-  border-bottom: 1px #AC7E00 solid; }
+  background-image: url("../imagenes/bg-servicios.jpg"); }
+  .sumate .fondo-sumate {
+    background-color: white; }
+  .sumate .sumate-texto {
+    margin-bottom: 8vh; }
+    .sumate .sumate-texto h1 {
+      margin-top: 6vh; }
+    .sumate .sumate-texto p {
+      text-align: center; }
+    .sumate .sumate-texto a {
+      color: #d39b00; }
+  .sumate .formulario-sumate label {
+    color: #d39b00; }
+  .sumate .formulario-sumate input {
+    color: #d39b00;
+    border: 1px solid #d39b00;
+    background-color: white; }
+  .sumate .formulario-sumate .comentario {
+    background-color: white; }
+  .sumate .formulario-sumate .carga-tu-cv {
+    border: none; }
+  .sumate .formulario-sumate .boton-form {
+    background-color: #d39b00;
+    border: none; }
+    .sumate .formulario-sumate .boton-form:hover {
+      background-color: black;
+      border: 1px solid #d39b00;
+      transition: all 0.5s ease; }
 
-.sumateTexto p {
-  text-align: center; }
-
-.bajadaFormRrhh {
-  margin-bottom: 20px;
-  color: #d39b00;
-  display: inline-block;
-  width: 20%; }
-
-.imgTrabaja {
+.img-sumate {
   margin-bottom: 9.8vh;
   margin-top: 4vh;
   display: inline-block; }
-  .imgTrabaja .quote {
-    position: absolute;
+  .img-sumate .quote {
     background-color: #141414;
     border: 1px solid #d39b00;
     color: white;
     padding: 2vh;
-    bottom: 25%;
-    font-size: medium;
-    width: 40%; }
-    .imgTrabaja .quote .quoteBody {
-      font-weight: 600; }
-    .imgTrabaja .quote .firmaQuote {
+    font-size: medium; }
+    .img-sumate .quote .quote-body {
+      font-weight: 600;
+      font-size: 4vh; }
+    .img-sumate .quote .quote-firma {
       font-size: small; }
 
-.formulario label {
-  color: #d39b00; }
-
-.formulario input {
+.oportunidades h2 {
   color: #d39b00;
-  border: 1px solid #d39b00; }
+  text-align: center; }
 
-.formularioTrabaja {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 60px;
-  border: 1px solid #d39b00;
-  padding: 20px;
-  display: inline-block;
-  width: 45%; }
-
-.formItemrrhh label {
-  margin: 15px;
-  font-size: 16px;
-  font-weight: 300; }
-
-.formItemrrhh input {
-  margin-left: 10px;
-  display: inline-block; }
-
-.comentario {
-  width: 100%;
-  display: block; }
-
-.oportunidades {
-  color: #d39b00; }
-
-.containerCards {
-  min-height: 55vh;
-  display: flex; }
-
-.cardSumate {
+.oportunidades .card {
   box-shadow: 0px 2px 2px rgba(129, 129, 129, 0.2);
   max-height: 40vh; }
-  .cardSumate:hover {
+  .oportunidades .card:hover {
     transform: translateY(-2px); }
-  .cardSumate p {
+  .oportunidades .card p {
     padding: 5 0vw; }
-  .cardSumate a {
+  .oportunidades .card a {
     background-color: white;
     border: #d39b00 1px solid;
     color: #d39b00; }
-    .cardSumate a:hover {
+    .oportunidades .card a:hover {
       background-color: white;
       border: 1px solid white;
       transition: all 0.5s ease; }
-    .cardSumate a:hover {
+    .oportunidades .card a:hover {
       box-shadow: 0px 15px 20p;
       color: #AC7E00;
       border: black 1px solid; }
 
-@media only screen and (max-width: 720px) {
-  .imgContacto {
-    padding-top: 3rem; } }
+/* Media queries */
+@media only screen and (min-width: 1500px) {
+  .carousel-index .carousel-contenedor-caption h1 {
+    font-size: 4.5vw; }
+  .carousel-index .carousel-contenedor-caption p {
+    font-size: 5vw;
+    font-size: 30px;
+    font-size: 3vh; } }
 
-@media only screen and (max-width: 576px) {
-  .carousel-contenedor-caption {
-    transform: translateY(-60%);
-    top: 50%;
-    bottom: initial; }
-    .carousel-contenedor-caption .carousel-titulo {
-      color: #d39b00;
-      font-size: 30vh;
-      margin-bottom: 5vh; }
-    .carousel-contenedor-caption .carousel-subtitulo {
-      font-size: 3vh; }
-  .botonForm {
-    width: 300px; } }
+@media only screen and (max-width: 1200px) {
+  .carousel-valores .carousel-valores-titulo {
+    font-size: 3vw;
+    top: 20%; }
+  .carousel-valores .carousel-valores-item div {
+    width: 50%; }
+    .carousel-valores .carousel-valores-item div h4 {
+      font-size: 4vw; }
+    .carousel-valores .carousel-valores-item div p {
+      font-size: 4vw; }
+  .servicio-evento .servicio-evento-texto h2 {
+    font-size: 5vw; }
+  .servicio-evento .servicio-evento-texto p {
+    font-size: 2vh; } }
+
+@media only screen and (max-width: 992px) {
+  .carousel-valores .carousel-valores-titulo {
+    top: 10%;
+    font-size: 3vw; }
+  .carousel-valores .carousel-valores-item div {
+    width: 45%; }
+    .carousel-valores .carousel-valores-item div h4 {
+      font-size: 34w; }
+    .carousel-valores .carousel-valores-item div p {
+      font-size: 3w; } }
+
+@media only screen and (max-width: 720px) {
+  .carousel-valores .carousel-valores-titulo {
+    font-size: 3vw; }
+  .carousel-valores .carousel-valores-item div {
+    width: 50%; }
+    .carousel-valores .carousel-valores-item div h4 {
+      font-size: 34w; }
+    .carousel-valores .carousel-valores-item div p {
+      font-size: 3w; }
+  .servicio-comida {
+    margin-bottom: 15vh; }
+    .servicio-comida .servicio-comida-texto {
+      margin: 5vw;
+      margin-left: 15vw;
+      border-bottom: white 1px solid; }
+      .servicio-comida .servicio-comida-texto h5 {
+        color: #d39b00; }
+      .servicio-comida .servicio-comida-texto ul {
+        margin-bottom: 5vh; } }
+
+@media only screen and (max-width: 430px) {
+  .carousel-index .carousel-contenedor-caption h1 {
+    font-size: 40px; }
+  .carousel-index .carousel-contenedor-caption p {
+    font-size: 30px; }
+  .carousel-valores .carousel-valores-titulo {
+    font-size: 4vw; }
+  .carousel-valores .carousel-valores-item {
+    bottom: 30%; }
+    .carousel-valores .carousel-valores-item div {
+      width: 60%; }
+      .carousel-valores .carousel-valores-item div h4 {
+        font-size: 6vw; }
+      .carousel-valores .carousel-valores-item div p {
+        font-size: 5vw; }
+  .servicio-comida {
+    margin-bottom: 15vh; }
+    .servicio-comida .servicio-comida-texto {
+      margin: 5vw;
+      border-bottom: white 1px solid; }
+      .servicio-comida .servicio-comida-texto h5 {
+        color: #d39b00; }
+      .servicio-comida .servicio-comida-texto ul {
+        margin-bottom: 5vh; }
+  .servicio-evento .servicio-evento-texto h2 {
+    font-size: 10vw; }
+  .servicio-evento .servicio-evento-texto p {
+    font-size: 3vh; } }
 
 @media only screen and (max-width: 370px) {
-  .imgContacto {
-    padding-top: 3rem; } }
+  .carousel-contenedor-caption h1 {
+    color: #d39b00;
+    font-size: 10vw;
+    font-weight: 600; }
+  .carousel-contenedor-caption p {
+    color: #ffffff;
+    font-size: 10vw;
+    font-weight: 300;
+    margin-bottom: 2vh; }
+  .carousel-valores .carousel-valores-titulo {
+    font-size: 5vw; }
+  .carousel-valores .carousel-valores-item {
+    bottom: 35%; }
+    .carousel-valores .carousel-valores-item div {
+      width: 60%; }
+      .carousel-valores .carousel-valores-item div h4 {
+        font-size: 6vw; }
+      .carousel-valores .carousel-valores-item div p {
+        font-size: 5vw; }
+  .servicio-evento .servicio-evento-texto h2 {
+    font-size: 10vw; }
+  .servicio-evento .servicio-evento-texto p {
+    font-size: 3vh; } }

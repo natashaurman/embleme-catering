@@ -20,7 +20,7 @@
 
     <!-- NAV -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg- navCustom">
+    <nav class="navbar navbar-expand-lg navbar-dark bg- nav-custom">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img src="imagenes\inversion_reducida.jpg" alt="logo" height="50px"
             width="50px"></a>
@@ -33,15 +33,14 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">HOME</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="conocenos.html">CONOCENOS</a>
+            <li class="nav-item item ">
+              <a class="nav-link" href="conocenos.html">CONOCENOS </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="servicios.html">SERVICIOS</a>
             </li>
             <li class="nav-item active activo">
-              <a class="nav-link" href="contacto.html">CONTACTO Y PRESUPUESTOS <span
-                  class="sr-only">(current)</span></a>
+              <a class="nav-link" href="contacto.html">CONTACTO Y PRESUPUESTOS<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="trabajaconnosotros.html">SUMATE</a>
@@ -50,153 +49,170 @@
         </div>
       </div>
     </nav>
-  </header>
 
-  <!-- FIN NAV -->
+    <!-- FIN NAV -->
+
+  </header>
 
 
   <body>
 
-    <main class="container-fluid m-0 p-0 container-contacto">
+    <main class="container-fluid container-contacto">
+
+      <!-- TITULO + BAJADA -->
+
       <div class="row justify-content-center">
-
-        <!-- TITULO + BAJADA -->
-
-        <div class="encabezadoContacto col-md-6 col-sm-12 justify-self-center">
-          <h1 class="mt-4">Contacto & presupuestos</h1>
-          <p>Nuestro equipo está a tu servicio para responder cualquier consulta <br> y enviarte un presupuesto acorde a tus
-            necesidades. <br>
-            Esperamos tu contacto para conocerte y empezar a trabajar juntos.</p>
+        <div class="encabezado-contacto col-md-6 col-sm-12 justify-self-center text-center">
+          <h1>Contacto & presupuestos</h1>
+          <p>Completá este formulario con tus datos y nos pondremos en contacto con vos en las próximas 24 horas.
+            <br><br>
+            Si preferís, podés llamar o escribir por whatsapp al <strong>+54 9 11-2761-2020</strong><br> o por mail a
+            <strong>
+              <a href="">hola@emblemecatering.com.</a></p>
         </div>
+
 
         <!-- FIN TITULO + BAJADA -->
 
 
         <!-- FORM -->
 
-        <div class="form container-fluid">
+        <section class="row justify-content-center formulario-contacto mb-5">
+          <div class="col-md-5 col-sm-12">
+            <form class="ml-4">
 
-          <section class="row justify-content-center mt-5 mb-5">
-            <div class="col-md-5 col-sm-12">
-              <form class="ml-4">
+              <div class="mb-3">
+                <label for="inputEmail4" class="form-label label-form">Nombre y apellido</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Gabriel Medina" name="nombre">
+              </div>
+              <div class="mb-3">
+                <label for="inputEmail4" class="form-label label-form">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@mail.com" name="mail">
+              </div>
+              <div class="mb-3">
+                <label for="inputAddress" class="form-label label-form">Teléfono</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="11 1234 5678" name="telefono">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1" class="form-label label-form">Cantidad de personas
+                  invitadas</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Elegir cantidad</option>
+                  <option>5-30</option>
+                  <option>31-60</option>
+                  <option>61-100</option>
+                  <option>101-200</option>
+                  <option>200+</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1" class="form-label label-form">Tipo de evento</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Elegir tipo de evento</option>
+                  <option>Corporativo</option>
+                  <option>Social</option>
+                  <option>Informal</option>
+                  <option>Otro</option>
+                </select>
+              </div>
 
-                <div class="mb-3">
-                  <label for="inputEmail4" class="form-label label-form">Nombre y apellido</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Gabriel Medina" name="nombre">
-                </div>
-                <div class="mb-3">
-                  <label for="inputEmail4" class="form-label label-form">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@mail.com" name="mail">
-                </div>
-                <div class="mb-3">
-                  <label for="inputAddress" class="form-label label-form">Teléfono</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="11 1234 5678" name="telefono">
-                </div>
-                <div class="mb-3">
-                  <label for="inputState" class="form-label label-form">Tipo de evento</label>
-                  <select id="inputState" class="form-select">
-                    <option selected>Elegir</option>
-                    <option>Corporativo</option>
-                    <option>Casamiento</option>
-                    <option>Cumpleaños</option>
-                    <option>Otro</option>
-                  </select>
-                </div>
-                <div class="mb-3">
-                  <label for="inputAddress2" class="form-label label-form">¿Querés agregar algún comentario?</label>
-                  <input type="comment" class="form-control" id="inputAddress2" placeholder=>
-                </div>
-                <div class="mb-3">
-                  <div class="form-check">
-                    <input class="form-check-input label-form" type="checkbox" id="gridCheck">
-                    <label class="form-check-label label-form" for="gridCheck">
-                      Quiero recibir novedades por mail.
-                    </label>
-                  </div>
-                </div>
-                <div class="col-12 mb-4 p-0">
-                  <button type="button"
-                  class="btn btn-primary botonForm col-lg-3 col-md-12 col-sm-12 col-xs-12"
-                  data-toggle="modal" data-target="#exampleModal">
-                  Enviar
-              </button>
-  </div>
+              <div class="form-group">
+                <label for="comment" class="form-label label-form">¿Querés agregar algún comentario?</label>
+                <textarea class="form-control comentario" rows="5" id="comment"></textarea>
+              </div>
 
-              </form>
-            </div>
+              <div class="col-12 my-4 p-0">
+                <button type="button" class="btn btn-secondary boton-form col-lg-3 col-md-12 col-sm-12 col-xs-12"
+                  data-toggle="modal" data-target="#exampleModal"> Enviar</button>
+              </div>
 
-            <!-- FIN FORM -->
+            </form>
+          </div>
+
+          <!-- FIN FORM -->
 
 
-            <!-- MODAL -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">¡Gracias!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    Nuestro equipo te contactará en las próximas 24hs.
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
+          <!-- MODAL -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">¡Gracias!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Nuestro equipo te contactará en las próximas 24hs.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
-            <!-- FIN MODAL -->
+          </div>
+          <!-- FIN MODAL -->
 
 
-            <!-- IMAGEN -->
+          <!-- IMAGEN -->
 
-            <div class="col-md-5 col-sm-12 py-4 ml-4">
-              <img src="imagenes/contacto.png" alt="catering" class="img-fluid text-center imgContacto" style="min-width: 200px;"
-                height="500px">
-            </div>
-            <!-- FIN IMAGEN -->
+          <div class="col-md-5 col-sm-12 py-4 ml-4">
+            <img src="imagenes/contacto.png" alt="pinchos de catering" class="img-fluid text-center imgContacto"
+              style="min-width: 200px;" height="500px">
+          </div>
+          <!-- FIN IMAGEN -->
 
-          </section>
-
-        </div>
-
-                <!-- TITULO + BAJADA -->
-
-                <div class="encabezadoContacto col-md-6 col-sm-12 justify-self-center">
-                  <h1 class="mt-4">mapa</h1>
-                </div>
-        
-                <!-- FIN TITULO + BAJADA -->
+        </section>
 
     </main>
 
-  <!-- FOOTER -->
 
-  <footer class="row col-lg-12 col-md-12 m-0 container-fluid">
+    <!-- FOOTER -->
 
+    <footer class="row m-0 container-fluid">
 
-    <div class="logoFooter">
-      <img src="imagenes/inversion_logo.png" class="img-fluid" alt="logotipos">
-    </div>
-
-    <div class="column text-center datosFooter">
-      <p class="text-light pt-4"><strong>EMBLEME S.A.</strong></p>
-      <p class="row justify-content-center text-light m-0">Pasaje de los Ejemplos 3012</p>
-      <p class="row justify-content-center text-light m-0">+54 9 11-2761-2020</p>
-      <p class="row justify-content-center text-light">hola@emblemecatering.com</p>
-
-      <div class="text-center text-light">
-        © 2021 Copyright:
-        <a class="text-light" href="https://www.behance.net/natashaurm9926/">Natasha Urman</a>
+      <div class="logo-footer col-md-2">
+        <img src="imagenes/inversion_logo.png" alt="logotipos">
       </div>
 
-    </div>
-  </footer>
+      <div class="column datos-footer col-md-3">
+        <p class="titulo-footer"><strong>EMBLEME S.A.</strong></p>
+        <p class="row text-light m-0">Pasaje de los Ejemplos 3012</p>
+        <p class="row text-light m-0">+54 9 11-2761-2020</p>
+        <p class="row text-light m-0"> hola@emblemecatering.com</p>
 
-  <!-- FIN FOOTER -->
+        <div class="text-light mt-3">
+          © 2021 diseño:
+          <a class="text-light" href="https://www.behance.net/natashaurm9926/">Natasha Urman</a>
+        </div>
+      </div>
+
+      <div class="column text-left menu-footer col-md-2">
+        <p><strong> MENU </strong></p>
+        <ul>
+          <li><a href="/index.html">HOME</a></li>
+          <li><a href="/conocenos.html">CONOCENOS</a></li>
+          <li><a href="/servicios.html">SERVICIOS</a></li>
+          <li><a href="/contacto.html">CONTACTO Y PRESUPUESTOS</a></li>
+          <li><a href="/trabajaconnosotros.html">SUMATE A EMBLEME</a></li>
+        </ul>
+      </div>
+
+      <div class="redes col-md-2">
+        <div>
+          <p class="titulo-redes"><strong>Seguinos en nuestras redes:</strong> </p>
+        </div>
+        <img src="imagenes/facebook.png" alt="facebook" width="24" height="24">
+        <p>/emblemecatering</p>
+        <img src="imagenes/instagram.png" alt="instagram" width="24" height="24">
+        <p>@emblemecatering </p>
+      </div>
+
+
+    </footer>
+
+    <!-- FIN FOOTER -->
 
     <!-- SCRIPTS -->
 

@@ -23,7 +23,7 @@
 
     <!-- NAV -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg- navCustom">
+    <nav class="navbar navbar-expand-lg navbar-dark bg- nav-custom">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img src="imagenes\inversion_reducida.jpg" alt="logo" height="50px"
             width="50px"></a>
@@ -33,10 +33,10 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <li>
+            <li class="nav-item">
               <a class="nav-link" href="index.html">HOME</a>
             </li>
-            <li class="nav-item active activo">
+            <li class="nav-item item active activo">
               <a class="nav-link" href="conocenos.html">CONOCENOS <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -67,21 +67,22 @@
 
       <!-- TITULO -->
 
-      <h1 class="text-center mt-2 tituloConocenos">Somos Emblème</h1>
+      <h1 class="text-center mt-2 titulo-conocenos">Somos Emblème</h1>
 
       <!-- FIN TITULO -->
 
       <!-- Apasionados -->
 
       <div class="container atributo bg-light row m-0">
-        <div class="container textoAtributo col-lg-5 col-sm-12 col-xxl-5">
+        <div class="container texto-atributo col-lg-5 col-sm-12 col-xxl-5">
           <h2 class="p-0">APASIONADOS</h2>
           <p class="font-weight-light">Somos fanáticos de la buena comida y en cada evento buscamos transmitir ese
             sentimiento. Nos apasiona brindar un buen servicio, generar momentos únicos y experiencias increíbles.
             Buscamos inspirar a otros, tanto como a nosotros nos inspira todo aquello que rodea nuestro trabajo.</p>
         </div>
         <div>
-          <img src="imagenes\atributo.jpg" class="img-fluid col-lg p-0 m-0" style="max-width: 70vh;" alt="mozo">
+          <img src="imagenes\atributo.jpg" class="img-fluid col-lg p-0 m-0" style="max-width: 70vh;"
+            alt="imagen mozo sirviendo una mezcla en un recipiente naranja">
         </div>
       </div>
 
@@ -90,9 +91,9 @@
       <div class="container atributob bg-light row m-0">
         <div>
           <img src="imagenes\atributo2.jpg" class="img-fluid col-lg-3 col-sm-8 p-0" style="max-width: 70vh;"
-            alt="ingrediente">
+            alt="ingrediente amarillo en una cuchara">
         </div>
-        <div class="container textoAtributo col-lg-5 ">
+        <div class="container texto-atributo col-lg-5 ">
           <h2 class="p-0 mt-4">EXPERTOS</h2>
           <p class="font-weight-light">Nuestro expertise nos diferencia porque aprendimos de los mejores, pero sobre
             todo
@@ -104,14 +105,15 @@
       <!-- Detallistas -->
 
       <div class="container atributo bg-light row m-0">
-        <div class="container textoAtributo col-lg-5">
+        <div class="container texto-atributo col-lg-5">
           <h2 class="mb-3">DETALLISTAS</h2>
           <p class="font-weight-light"> Un evento inolvidable necesita un catering de primer nivel. Buscamos esa
             excelencia poniendo el foco en los detalles: el mejor condimento, la forma más atractiva de presentar un
             plato, una atención al cliente impecable en todo momento, la apertura al feedback que nos hace mejores.</p>
         </div>
         <div>
-          <img src="imagenes\atributo3.jpg" class="img-fluid col-lg p-0" style="max-width: 70vh;" alt="quesos">
+          <img src="imagenes\atributo3.jpg" class="img-fluid col-lg p-0" style="max-width: 70vh;"
+            alt="miel sobre queso">
         </div>
       </div>
 
@@ -121,59 +123,119 @@
 
     <!-- FORM -->
 
-    <div class="container formConocenos col-md-12" style="height:auto">
+    <div class="container formulario-conocenos col-md-12" style="height:auto">
       <h2 class="hablemos text-white text-center pt-4">
         ¡Hablemos!
       </h2>
       <p class="text-white text-center pt-1">Ahora que ya nos conocés, construyamos juntos tu propuesta. </p>
 
-      <form class="form-inline">
-        <div class="form-group mb-4 mr-3">
-          <label for="inputPassword2" class="sr-only">Email</label>
-          <input type="email" class="form-control" id="inputPassword2" placeholder="Email">
+
+      <section class="row justify-content-center mb-5 form-conocenos-background">
+        <div class="col-md-5 col-sm-12">
+          <form class="ml-4">
+
+            <div class="mb-2">
+              <label for="inputEmail4" class="form-label label-form">Tu nombre</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Gabriel Medina" name="nombre">
+            </div>
+            <div class="mb-2">
+              <label for="inputEmail4" class="form-label label-form">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@mail.com" name="mail">
+            </div>
+            <div class="mb-2">
+              <label for="inputAddress" class="form-label label-form">Teléfono</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="11 1234 5678" name="telefono">
+            </div>
+
+            <div class="col-12 my-4 p-0">
+              <button type="button" class="btn btn-secondary boton-form col-12" data-toggle="modal"
+                data-target="#exampleModal"> Enviar</button>
+            </div>
+
+          </form>
         </div>
 
         <!-- Botón -->
 
-        <div>
-          <button type="submit" class="btn btn-primary mb-4 submitConocenos">Enviar</button>
-        </div>
 
         <!-- Fin botón -->
 
-      </form>
+        </form>
     </div>
 
     <!-- FIN FORM -->
 
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">¡Gracias!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Nuestro equipo te contactará en las próximas 24hs.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIN MODAL -->
+
+
 
   </main>
 
+
   <!-- FOOTER -->
 
-  <footer class="row col-lg-12 col-md-12 m-0 container-fluid">
+  <footer class="row m-0 container-fluid">
 
-
-    <div class="logoFooter">
-      <img src="imagenes/inversion_logo.png" class="img-fluid" alt="logotipos">
+    <div class="logo-footer col-md-2">
+      <img src="imagenes/inversion_logo.png" alt="logotipos">
     </div>
 
-    <div class="column text-center datosFooter">
-      <p class="text-light pt-4"><strong>EMBLEME S.A.</strong></p>
-      <p class="row justify-content-center text-light m-0">Pasaje de los Ejemplos 3012</p>
-      <p class="row justify-content-center text-light m-0">+54 9 11-2761-2020</p>
-      <p class="row justify-content-center text-light">hola@emblemecatering.com</p>
+    <div class="column datos-footer col-md-3">
+      <p class="titulo-footer"><strong>EMBLEME S.A.</strong></p>
+      <p class="row text-light m-0">Pasaje de los Ejemplos 3012</p>
+      <p class="row text-light m-0">+54 9 11-2761-2020</p>
+      <p class="row text-light m-0"> hola@emblemecatering.com</p>
 
-      <div class="text-center text-light">
-        © 2021 Copyright:
+      <div class="text-light mt-3">
+        © 2021 diseño:
         <a class="text-light" href="https://www.behance.net/natashaurm9926/">Natasha Urman</a>
       </div>
-
     </div>
+
+    <div class="column text-left menu-footer col-md-2">
+      <p><strong> MENU </strong></p>
+      <ul>
+        <li><a href="/index.html">HOME</a></li>
+        <li><a href="/conocenos.html">CONOCENOS</a></li>
+        <li><a href="/servicios.html">SERVICIOS</a></li>
+        <li><a href="/contacto.html">CONTACTO Y PRESUPUESTOS</a></li>
+        <li><a href="/trabajaconnosotros.html">SUMATE A EMBLEME</a></li>
+      </ul>
+    </div>
+
+    <div class="redes col-md-2">
+      <div>
+        <p class="titulo-redes"><strong>Seguinos en nuestras redes:</strong> </p>
+      </div>
+      <img src="imagenes/facebook.png" alt="facebook" width="24" height="24">
+      <p>/emblemecatering</p>
+      <img src="imagenes/instagram.png" alt="instagram" width="24" height="24">
+      <p>@emblemecatering </p>
+    </div>
+
+
   </footer>
 
   <!-- FIN FOOTER -->
-
   <!-- SCRIPTS -->
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
