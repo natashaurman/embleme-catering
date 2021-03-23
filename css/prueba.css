@@ -23,7 +23,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Work sans";
+  font-family: "Work sans", sans-serif;
   overflow-x: hidden;
   background-color: black; }
 
@@ -153,7 +153,6 @@ footer {
 .servicios-index {
   background-image: url("../imagenes/servicios-index.jpg"); }
   .servicios-index .servicios-titulo-index {
-    margin-bottom: 8vh;
     margin-top: 8vh; }
     .servicios-index .servicios-titulo-index h1 {
       margin-bottom: 5vh; }
