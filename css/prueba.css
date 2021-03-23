@@ -447,6 +447,8 @@ footer {
     transform: translateY(-2px); }
   .oportunidades .card p {
     padding: 5 0vw; }
+  .oportunidades .card .btn {
+    margin-top: 2vh; }
   .oportunidades .card a {
     background-color: white;
     border: #d39b00 1px solid;
