@@ -1,5 +1,6 @@
 @charset "UTF-8";
-.servicios-index .servicios-titulo-index h1, .titulo-conocenos, .container-nuestros-servicios .titulo-servicios h1, .container-contacto .encabezado-contacto h1, .sumate .sumate-texto h1 {
+@import url("https://fonts.googleapis.com/css?family=Mystery+Quest");
+.servicios-index .servicios-titulo-index h1, .container-conocenos .titulo-conocenos, .container-nuestros-servicios .titulo-servicios h1, .container-contacto .encabezado-contacto h1, .sumate .sumate-texto h1 {
   color: #d39b00;
   font-size: 2.2rem;
   font-weight: 700;
@@ -10,7 +11,7 @@
   text-align: center;
   font-weight: 400; }
 
-.atributo img, .atributob img, .container-contacto .formulario-contacto .imgContacto, .img-sumate {
+.atributo img, .atributob img, .container-contacto .formulario-contacto .img-contacto, .img-sumate {
   -webkit-box-shadow: 10px 10px 21px -10px rgba(0, 0, 0, 0.51);
   -moz-box-shadow: 10px 10px 21px -10px rgba(0, 0, 0, 0.51);
   box-shadow: 10px 10px 21px -10px rgba(0, 0, 0, 0.51); }
@@ -263,21 +264,27 @@ footer {
   border-bottom: 1px solid #d39b00;
   border-left: 1px solid #d39b00;
   padding: 4vh; }
+  .atributo .texto-atributo h2 {
+    color: #d39b00;
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-size: 4vh;
+    margin: 4vh 0; }
+  .atributo .texto-atributo p {
+    font-size: 1.2rem; }
 
 .atributob {
   border-bottom: 1px solid #d39b00;
   border-right: 1px solid #d39b00;
   padding: 4vh; }
-
-.texto-atributo h2 {
-  color: #d39b00;
-  font-weight: 400;
-  letter-spacing: 5px;
-  font-size: 4vh;
-  margin: 4vh 0; }
-
-.texto-atributo p {
-  font-size: 1.2rem; }
+  .atributob .texto-atributo h2 {
+    color: #d39b00;
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-size: 4vh;
+    margin: 4vh 0; }
+  .atributob .texto-atributo p {
+    font-size: 1.2rem; }
 
 .formulario-conocenos {
   display: flex;
@@ -490,6 +497,12 @@ footer {
       font-size: 3w; } }
 
 @media only screen and (max-width: 720px) {
+  .carousel-index .carousel-contenedor-caption h1 {
+    font-size: 10vw; }
+  .carousel-index .carousel-contenedor-caption p {
+    font-size: 5vw;
+    font-size: 30px;
+    font-size: 3vh; }
   .carousel-valores .carousel-valores-titulo {
     font-size: 3vw; }
   .carousel-valores .carousel-valores-item div {
