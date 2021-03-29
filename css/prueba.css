@@ -238,23 +238,6 @@ footer {
     font-style: normal;
     margin: 1vw; }
 
-/* form */
-.form-index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #AC7E00; }
-  .form-index button {
-    background-color: black; }
-    .form-index button:hover {
-      background-color: white;
-      border: 1px solid black;
-      transition: all 0.5s ease; }
-    .form-index button:hover {
-      box-shadow: 0px 15px 20p;
-      color: #AC7E00;
-      transform: translateY(-5px); }
-
 /* INICIO SECCIÓN CONOCENOS */
 .container-conocenos {
   background-image: url("../imagenes/bg-servicios.jpg"); }
@@ -263,27 +246,21 @@ footer {
   border-bottom: 1px solid #d39b00;
   border-left: 1px solid #d39b00;
   padding: 4vh; }
-  .atributo .texto-atributo h2 {
-    color: #d39b00;
-    font-weight: 400;
-    letter-spacing: 5px;
-    font-size: 4vh;
-    margin: 4vh 0; }
-  .atributo .texto-atributo p {
-    font-size: 1.2rem; }
 
 .atributob {
   border-bottom: 1px solid #d39b00;
   border-right: 1px solid #d39b00;
   padding: 4vh; }
-  .atributob .texto-atributo h2 {
-    color: #d39b00;
-    font-weight: 400;
-    letter-spacing: 5px;
-    font-size: 4vh;
-    margin: 4vh 0; }
-  .atributob .texto-atributo p {
-    font-size: 1.2rem; }
+
+.texto-atributo h2 {
+  color: #d39b00;
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-size: 4vh;
+  margin: 4vh 0; }
+
+.texto-atributo p {
+  font-size: 1.2rem; }
 
 .formulario-conocenos {
   display: flex;
@@ -465,7 +442,8 @@ footer {
 /* Media queries */
 @media only screen and (min-width: 1500px) {
   .carousel-index .carousel-contenedor-caption h1 {
-    font-size: 4.5vw; }
+    font-size: 4.5vw;
+    background-color: red; }
   .carousel-index .carousel-contenedor-caption p {
     font-size: 5vw;
     font-size: 30px;
@@ -504,26 +482,26 @@ footer {
     font-size: 5vw;
     font-size: 30px;
     font-size: 3vh; }
-  .carousel-valores .carousel-valores-titulo {
+  .carousel-index .carousel-contenedor-caption .carousel-valores .carousel-valores-titulo {
     font-size: 3vw; }
-  .carousel-valores .carousel-valores-item div {
+  .carousel-index .carousel-contenedor-caption .carousel-valores .carousel-valores-item div {
     width: 50%; }
-    .carousel-valores .carousel-valores-item div h4 {
+    .carousel-index .carousel-contenedor-caption .carousel-valores .carousel-valores-item div h4 {
       font-size: 34w; }
-    .carousel-valores .carousel-valores-item div p {
+    .carousel-index .carousel-contenedor-caption .carousel-valores .carousel-valores-item div p {
       font-size: 3w; }
-  .servicio-comida {
+  .carousel-index .carousel-contenedor-caption .servicio-comida {
     margin-bottom: 15vh; }
-    .servicio-comida .servicio-comida-texto {
+    .carousel-index .carousel-contenedor-caption .servicio-comida .servicio-comida-texto {
       margin: 5vw;
       margin-left: 15vw;
       border-bottom: white 1px solid; }
-      .servicio-comida .servicio-comida-texto h5 {
+      .carousel-index .carousel-contenedor-caption .servicio-comida .servicio-comida-texto h5 {
         color: #d39b00; }
-      .servicio-comida .servicio-comida-texto ul {
+      .carousel-index .carousel-contenedor-caption .servicio-comida .servicio-comida-texto ul {
         margin-bottom: 5vh; } }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 720px) and (max-width: 430px) {
   .carousel-index .carousel-contenedor-caption h1 {
     font-size: 40px; }
   .carousel-index .carousel-contenedor-caption p {
@@ -552,7 +530,7 @@ footer {
   .servicio-evento .servicio-evento-texto p {
     font-size: 3vh; } }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 720px) and (max-width: 370px) {
   .carousel-contenedor-caption h1 {
     color: #d39b00;
     font-size: 10vw;
